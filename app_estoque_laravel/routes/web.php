@@ -12,6 +12,9 @@
 */
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', 'UserController@login');
+Route::get('entrar', 'UserController@create');
